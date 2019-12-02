@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css');
+
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: violet;
+}
+
+.container {
+    background-color: red;
+}  
+
+.row {
+    background-image: url('https://image.shutterstock.com/image-photo/beautiful-abstract-grunge-decorative-navy-600w-539880832.jpg');
+}
+
+.logo {
+    height : 80px;
+    width: 33%
+}
+
+.main-menu:hover .main-menubox{
+    display: block;
+}
+
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu a::after{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 3px;
+    top: 40%;
+}
+
+.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    margin-top: -30px;
+    left: 100%;
+}
+
+@media (max-width: 992px) {
+    .dropdown-menu{
+        width: 50%;
+    }
+    .dropdown-menu .dropdown-submenu{
+        width: auto;
+    }
+
+    .dropdown-menu{ left: -131%;}
+}
+
+.dropdown-submenu a::after {
+    right: 16px;
+    top: 42%;
+}
+
+.dropdown-item {
+    padding: 8px 18px;
+}
+
+.dropdown-item {
+    white-space: normal
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    font-size: 14px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #dcdcdc;
+}
+
+li.nav-item {
+    padding: 10px 20px;
+}
